@@ -1,0 +1,285 @@
+/*
+ * Custom Style File
+ * Author - Serdar GULER
+ * Web    - www.gulers.com
+ * Mail   - serdarguler1991@gmail.com
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #182153;
+    background-color: #2a3a4a;
+}
+
+a {
+    color: #182153;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #182153;
+}
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 50px;
+}
+
+#header {
+    background-color: #162640;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+#header h1 {
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+.items .item {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    min-height: calc(50vh - 120px);
+    margin: 25px 10px;
+    padding: 30px;
+}
+
+.items .item h2 {
+    color: #abafb4;
+    font-size: 34px;
+    margin: 0;
+}
+
+.items .item p {
+    color: #ffffff;
+    font-size: 3.4vw;
+    display: table;
+    width: 100%;
+    height: calc(50vh - 220px);
+    margin: 0;
+}
+
+.items .item p span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.items .item .up,
+.items .item .down {
+    font-size: 4vw;
+}
+
+.items .item .fa.up {
+    color: #43b164;
+}
+
+.items .item .fa.down {
+    color: #b14343;
+}
+
+.items .item {
+    position: relative;
+}
+
+.items .item .info {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    right: 0;
+    color: #ffffff;
+}
+
+.items .item .info strong {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.items .item .info strong.up .fa {
+    color: #43b164;
+}
+
+.items .item .info strong.down .fa {
+    color: #b14343;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2a3949;
+    bottom: 0;
+}
+
+.lds-roller {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 991px) {
+    .items .item {
+        margin: 15px 0px;
+        padding: 30px 10px;
+    }
+    .section {
+        padding: 10px;
+    }
+    .items .item .info strong {
+        font-size: 14px;
+    }
+    .items.hide {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .items .item {
+        min-height: 190px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .items .item p {
+        font-size: 10vw;
+        height: 100px;
+    }
+    .items .item .up,
+    .items .item .down {
+        font-size: 12vw;
+    }
+    .items .item h2 {
+        font-size: 25px;
+    }
+    #header h1 {
+        font-size: 34px;
+    }
+    .section {
+        padding: 0 0 20px 0;
+    }
+}
