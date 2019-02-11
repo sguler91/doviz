@@ -61,19 +61,19 @@ if (substr($euro_d, 0, 1) == "-") {
 $btcturk = $new->ticker ();
 
 $btc_price = number_format($btcturk[0]["last"], 0, ',', '.');
-if ($btcturk[0]->daily > 0) {
+if ($btcturk[0]["daily"] > 0) {
     $btc_daily = true;
 } else {
     $btc_daily = false;
 }
 $eth_price = number_format($btcturk[1]["last"], 0, ',', '.');
-if ($btcturk[1]->daily > 0) {
+if ($btcturk[1]["daily"] > 0) {
     $eth_daily = true;
 } else {
     $eth_daily = false;
 }
 $xrp_price = number_format($btcturk[2]["last"], 2, ',', '.');
-if ($btcturk[2]->daily > 0) {
+if ($btcturk[2]["daily"] > 0) {
     $xrp_daily = true;
 } else {
     $xrp_daily = false;
