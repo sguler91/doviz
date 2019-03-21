@@ -32,8 +32,8 @@ function find($start, $end, $content){
     return $out[0];
 }
 
-$find = find('<span class="menu-row2">', '</span>', $content);
-$find2 = find('<span class="menu-row3">', '</span>', $content);
+$find = find('<span class="value">', '</span>', $content);
+$find2 = find('<span class="change">', '</span>', $content);
 
 $altin = strip_tags($find[0]);
 $altin_d = str_replace("% ", "", strip_tags($find2[0]));

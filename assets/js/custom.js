@@ -38,7 +38,7 @@ function doviz() {
     var dolarPrice = $("#dolar_price").text();
     var euroPrice = $("#euro_price").text();
 
-    fetch("./api/", {
+    fetch("./api/index.php", {
         method: 'get',
         cache: 'reload'
     })
